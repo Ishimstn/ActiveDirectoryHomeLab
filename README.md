@@ -41,9 +41,51 @@ A personal project, that throughly goes over the setup of establishing a virtual
 <br />
 <p align="left">
 <b>Two network adapters are installed in the DC Virtual Machine. Ethernet Adapter 1 Status indicates a APIPA address assigned to it, indicated by the 169.254.116.165 address. This means the network adapter was not able to obtain an IP address from the DHCP Server. And will serve to be the INTERNAL NIC. Ethernet Adapter 2 has an IP address of 10.0.2.15, which indicates that it obtained an IP address from the home router. This will serve to be the INTERNET NIC.</b>
+<br />
+<p align="center">
+  <img src="https://i.imgur.com/UmD71eP.png" width=32%>
+  <img src="https://i.imgur.com/Wu9PtCq.png" width=32%>
+  <img src="https://i.imgur.com/qFGTQtr.png" width=32%>
+</p>
+<p align="left">
+<b>After validating each IP address, rename each network adapter to its respective name for easier clarification in future configuration options. As well, renaming the PC to DC (Domain Controller), as this computer will serve as the main server for hosting various server roles</b>
+<br />
 
+<h2 align="center">Configuring Active Directory Domain Service on Domain Controller</h2>
+<p align="center">
+  <img src="https://i.imgur.com/fmz9uiX.png" width=32%>
+  <img src="https://i.imgur.com/am3fPiQ.png" width=32%>
+  <img src="https://i.imgur.com/YxDVztZ.png" width=32%>
+</p>
+<br />
+<p align="center">
+  <img src="https://i.imgur.com/3yiDSr9.png" width=32%>
+  <img src="https://i.imgur.com/X6VUIxm.png" width=32%>
+  <img src="https://i.imgur.com/hRv4h2s.png" width=32%>
+</p>
+<br />
+<p align="center">
+  <img src="https://i.imgur.com/7lBBWj7.png" width=32%>
+  <img src="https://i.imgur.com/nEkHWxS.png" width=32%>
+</p>
+<p align="left">
+<b>The screenshots above showcase the necessary steps to configuration and deployment configuration for Active Directory Domain Services (AD DS) onto the Domain Controller (DC) as a server role. If everything is configured and installed correctly, the log-in page should display the domain name.</b>
+<br />
 
-
+<h2 align="center">Creating a dedicated Admin Controller Account</h2>
+<p align="center">
+  <img src="https://i.imgur.com/cO8r8E8.png" width=32%>
+  <img src="https://i.imgur.com/dyqR6Zw.png" width=32%>
+  <img src="https://i.imgur.com/RgNvwlo.png" width=32%>
+</p>
+<br />
+<p align="center">
+  <img src="https://i.imgur.com/41Mojik.png" width=32%>
+  <img src="https://i.imgur.com/hwyLvfE.png" width=32%>
+  <img src="https://i.imgur.com/k73rvzq.png" width=32%>
+</p>
+<p align="left">
+<b>The screenshots go through the configuration process of creating a dedicated admin controller account. The purpose of this, is to isolate highly privileged rights from the user's standard, daily-use profile. It is best practice that severely limits the scope of an attack and protect critical infrastructure like Active Directory Domain Service, from malware or credential theft. If the configuration process is successful, you will be able to log in with the adminstrator credentials through the VM, as indicated by the last screenshot.</b>
 
 
 
