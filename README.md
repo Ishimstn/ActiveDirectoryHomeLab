@@ -12,7 +12,7 @@ A personal project, that throughly goes over the setup of establishing a virtual
 - <b>Windows 10 Pro</b>
 - <b>PowerShell</b>
 
-<h2>Overview of Network Topology Diagram</h2>
+<h2 align="center">Overview of Network Topology Diagram</h2>
 
 
 <p align= "center">
@@ -20,3 +20,24 @@ A personal project, that throughly goes over the setup of establishing a virtual
 <br />
 <p align= "left">
 <b>The picture above depicts a general diagram that showcases the entire home-lab network structure. The DC (Domain Controller), consists of two NICs (Network Interface Cards). One NIC will be configured for forwarding/receiving data traffic to the Internet, and will be repsectively named "INTERNET". The IP configuration for the "INTERNET" NIC will be obtained by the home router (In this use case for the lab it will come from my own personal home router). The other NIC will be configured to forwarding/receiving data traffic in the internal network environment, and will be respectively named "INTERNAL". The IP configuration for the "INTERNAL" NIC will be manually assigned, as indicated by the diagram. The DC will be installed with Windows 2019 Server, this will allow additional configurations to be installed and provide as the main point of entry for internal users on the network to circulate traffic within the environment, as well send/receive traffic to the Internet. Within the DC, the following configurations will be installed Active Directory Domain Service (AD DS), Remote Access Server/Network Address Translation (RAS/NAT), and Dynamic Host Configuration Protocol (DHCP). With AD DS installed, it allows the implementation of a FQDN (Fully Qualified Domain Name), and in the use case for this home lab it will be named mydomain.com. With RAS/NAT, it will allow routing of clients data on the private internal network to communicate with the DC to reach the Internet. DHCP configurations will also be installed, and will provide a way to automatically assign IPv4 addresses to client devices, and in this use case it will be for CLIENT1 VM. The CLIENT1 VM will be installed with Windows 10 Pro, with the additional feature of having its own NIC that will be named INTERNAL. IP configuration will be obtained from the DC through DHCP. This will enable the VM to connect to the VMware Network to the internal NIC of the DC.</b>
+<br />
+
+<h2 align="center">Base Configuration of Domain Controller (DC) Windows 2019 Server VM</h2>
+
+
+<p align= "center">
+<img src="https://i.imgur.com/1TWaWX0.png" height=80% width=80%/>
+<br />
+<p align= "left">
+<b>This is the baseline configuration for the setup of the DC server in Orcale VirtualBox. Two NICs will be enabled for this specific server, as indicated underneath the "Network" tab for the configuration window. Some additional parameters that can be manually configured are core processors (dependent on the actual core threads of one's computer), and base memory (in this lab example I've chosen 2,048MB = 2GB).</b>
+<br />
+  
+<h2 align="center">IP Addressing for Internet & Internal Network</h2>
+<p align="center">
+  <img src="https://i.imgur.com/vBakRje.png" width="32%">
+  <img src="https://i.imgur.com/pV4rYfK.png" width="32%">
+  <img src="https://i.imgur.com/Bo6neNV.png" width=32%>
+</p>
+<br />
+<p align="left">
+<b>Two network adapters are installed in the DC Virtual Machine. Ethernet Adapter 1 Status indicates a APIPA address assigned to it, indicated by the 169.254.116.165 address. This means the network adapter was not able to obtain an IP address from the DHCP Server. And will serve to be the INTERNAL NIC. Ethernet Adapter 2 has an IP address of 10.0.2.15, which indicates that it obtained an IP address from the home router. This will serve to be the INTERNET NIC.</b>
