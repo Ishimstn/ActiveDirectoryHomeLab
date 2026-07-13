@@ -1,4 +1,4 @@
-<h1>Active Directory Home-Lab</h1>
+<h1 align="center">Active Directory Home-Lab</h1>
 
 <h2>Description</h2>
 A personal project, that throughly goes over the setup of establishing a virtualized networking environment with the use of Orcale VirtualBox to create VMs (Virtual Machines) such as the DC (Domain Controller) utilizing Windows Server 2019 and a Windows 10 VM on a simulated coporate environment. This project will also incorporate how to set up server roles for Active Directory Domain Service (AD DS), Remote Access Server/Network Address Translation (RAS/NAT), and DHCP (Dynamic Host Configuration Protocol) with DHCP scope. The project will also contain a PowerShell script to add over 1,000 users onto the coporate netowork, to simulate how multiple users will engage with the network to gain access. The project will showcase the configuration of creating a Windows 10 VM with an Internal (NIC), as well using Active Directory to access CLIENT1 PC (Windows 10 VM). 
@@ -102,5 +102,40 @@ A personal project, that throughly goes over the setup of establishing a virtual
 </p>
 <p align="left">
 <b>The configuration of RAS/NAT allow a server to function as a software-based router and gateway for data traffic that flows through the network. Remote Access Service, enables remote clients to securely connect to the coporate environment, while allowing multiple private devices with their own private IP address to share a single public IP address for internet access through Network Address Translation.</b>
+<br />
+  
+<h2 align="center">Installing and Setting up Dynamic Host Configuration Protocol (DHCP)</h2>
+<p align="center">
+  <img src="https://i.imgur.com/1Bt1zRS.png" width=32%>
+  <img src="https://i.imgur.com/byz8l8U.png" width=32%>
+  <img src="https://i.imgur.com/1dulMv9.png" width=32%>
+</p>
+<br />
+<p align="center">
+  <img src="https://i.imgur.com/sM53I3m.png" width=32%>
+  <img src="https://i.imgur.com/m3djXoa.png" width=32%>
+  <img src="https://i.imgur.com/bJCndzj.png" width=32%>
+</p>
+<br /> 
+<p align="center">
+  <img src="https://i.imgur.com/2zGAiE6.png" width=32%>
+  <img src="https://i.imgur.com/QNLTryu.png" width=32%>
+</p>
+<p align="left">
+<b>The screenshots above show the configuration and installation of DHCP server role on the DC server. DHCP allows the automatic assignment of IP address to the network, as they join it without the need to manually configure it for each device. The DHCP scope for this lab is set to 172.16.0.100-172.16.0.200, giving about 101 usable dynamic IP addresses for the network clients. The default gateway and DNS will be set to 172.16.0.1, which is the IP address of the INTERNAL NIC of the DC server. This is done because all data traffic and queries will be handled by the DC. If all configurations are set properly, the link status of the IPv4 address should be a green arrow pointing up, which indicates that everything is working properly</b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
