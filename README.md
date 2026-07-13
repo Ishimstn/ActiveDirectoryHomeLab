@@ -86,7 +86,21 @@ A personal project, that throughly goes over the setup of establishing a virtual
 </p>
 <p align="left">
 <b>The screenshots go through the configuration process of creating a dedicated admin controller account. The purpose of this, is to isolate highly privileged rights from the user's standard, daily-use profile. It is best practice that severely limits the scope of an attack and protect critical infrastructure like Active Directory Domain Service, from malware or credential theft. If the configuration process is successful, you will be able to log in with the adminstrator credentials through the VM, as indicated by the last screenshot.</b>
+<br />
 
-
+<h2 align="center">Installing RAS/NAT (Remote Access Server) (Network Address Translation)</h2>
+<p align="center">
+  <img src="https://i.imgur.com/s5G7BSX.png" width=32%>
+  <img src="https://i.imgur.com/nmB9PVO.png" width=32%>
+  <img src="https://i.imgur.com/hXJEeJD.png" width=32%>
+</p>
+<br />
+<p align="center">
+  <img src="https://i.imgur.com/vIfIpxb.png" width=32%>
+  <img src="https://i.imgur.com/aLQwZG6.png" width=32%>
+  <img src="https://i.imgur.com/nPjV0gd.png" width=32%>
+</p>
+<p align="left">
+<b>The configuration of RAS/NAT allow a server to function as a software-based router and gateway for data traffic that flows through the network. Remote Access Service, enables remote clients to securely connect to the coporate environment, while allowing multiple private devices with their own private IP address to share a single public IP address for internet access through Network Address Translation.</b>
 
 
