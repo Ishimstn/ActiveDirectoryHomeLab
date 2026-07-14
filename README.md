@@ -34,18 +34,22 @@ A personal project, that throughly goes over the setup of establishing a virtual
   
 <h2 align="center">IP Addressing for Internet & Internal Network</h2>
 <p align="center">
-  <img src="https://i.imgur.com/vBakRje.png" width="32%">
-  <img src="https://i.imgur.com/pV4rYfK.png" width="32%">
-  <img src="https://i.imgur.com/Bo6neNV.png" width=32%>
-</p>
+  <img src="https://i.imgur.com/vBakRje.png" width="80%">
 <br />
+  <img src="https://i.imgur.com/pV4rYfK.png" width="80%">
+<br />
+  <img src="https://i.imgur.com/Bo6neNV.png" width="80%">
+</p>
 <p align="left">
 <b>Two network adapters are installed in the DC Virtual Machine. Ethernet Adapter 1 Status indicates a APIPA address assigned to it, indicated by the 169.254.116.165 address. This means the network adapter was not able to obtain an IP address from the DHCP Server. And will serve to be the INTERNAL NIC. Ethernet Adapter 2 has an IP address of 10.0.2.15, which indicates that it obtained an IP address from the home router. This will serve to be the INTERNET NIC.</b>
+
 <br />
 <p align="center">
-  <img src="https://i.imgur.com/UmD71eP.png" width=32%>
-  <img src="https://i.imgur.com/Wu9PtCq.png" width=32%>
-  <img src="https://i.imgur.com/qFGTQtr.png" width=32%>
+  <img src="https://i.imgur.com/UmD71eP.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/Wu9PtCq.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/qFGTQtr.png" width=80%>
 </p>
 <p align="left">
 <b>After validating each IP address, rename each network adapter to its respective name for easier clarification in future configuration options. As well, renaming the PC to DC (Domain Controller), as this computer will serve as the main server for hosting various server roles</b>
@@ -53,20 +57,23 @@ A personal project, that throughly goes over the setup of establishing a virtual
 
 <h2 align="center">Configuring Active Directory Domain Service on Domain Controller</h2>
 <p align="center">
-  <img src="https://i.imgur.com/fmz9uiX.png" width=32%>
-  <img src="https://i.imgur.com/am3fPiQ.png" width=32%>
-  <img src="https://i.imgur.com/YxDVztZ.png" width=32%>
+  <img src="https://i.imgur.com/fmz9uiX.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/am3fPiQ.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/YxDVztZ.png" width=80%>
 </p>
-<br />
 <p align="center">
-  <img src="https://i.imgur.com/3yiDSr9.png" width=32%>
-  <img src="https://i.imgur.com/X6VUIxm.png" width=32%>
-  <img src="https://i.imgur.com/hRv4h2s.png" width=32%>
+  <img src="https://i.imgur.com/3yiDSr9.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/X6VUIxm.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/hRv4h2s.png" width=80%>
 </p>
-<br />
 <p align="center">
-  <img src="https://i.imgur.com/7lBBWj7.png" width=32%>
-  <img src="https://i.imgur.com/nEkHWxS.png" width=32%>
+  <img src="https://i.imgur.com/7lBBWj7.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/nEkHWxS.png" width=80%>
 </p>
 <p align="left">
 <b>The screenshots above showcase the necessary steps to configuration and deployment configuration for Active Directory Domain Services (AD DS) onto the Domain Controller (DC) as a server role. If everything is configured and installed correctly, the log-in page should display the domain name.</b>
@@ -74,15 +81,18 @@ A personal project, that throughly goes over the setup of establishing a virtual
 
 <h2 align="center">Creating a dedicated Admin Controller Account</h2>
 <p align="center">
-  <img src="https://i.imgur.com/cO8r8E8.png" width=32%>
-  <img src="https://i.imgur.com/dyqR6Zw.png" width=32%>
-  <img src="https://i.imgur.com/RgNvwlo.png" width=32%>
+  <img src="https://i.imgur.com/cO8r8E8.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/dyqR6Zw.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/RgNvwlo.png" width=80%>
 </p>
-<br />
 <p align="center">
-  <img src="https://i.imgur.com/41Mojik.png" width=32%>
-  <img src="https://i.imgur.com/hwyLvfE.png" width=32%>
-  <img src="https://i.imgur.com/k73rvzq.png" width=32%>
+  <img src="https://i.imgur.com/41Mojik.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/hwyLvfE.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/k73rvzq.png" width=80%>
 </p>
 <p align="left">
 <b>The screenshots go through the configuration process of creating a dedicated admin controller account. The purpose of this, is to isolate highly privileged rights from the user's standard, daily-use profile. It is best practice that severely limits the scope of an attack and protect critical infrastructure like Active Directory Domain Service, from malware or credential theft. If the configuration process is successful, you will be able to log in with the adminstrator credentials through the VM, as indicated by the last screenshot.</b>
@@ -90,15 +100,18 @@ A personal project, that throughly goes over the setup of establishing a virtual
 
 <h2 align="center">Installing RAS/NAT (Remote Access Server) (Network Address Translation)</h2>
 <p align="center">
-  <img src="https://i.imgur.com/s5G7BSX.png" width=32%>
-  <img src="https://i.imgur.com/nmB9PVO.png" width=32%>
-  <img src="https://i.imgur.com/hXJEeJD.png" width=32%>
+  <img src="https://i.imgur.com/s5G7BSX.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/nmB9PVO.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/hXJEeJD.png" width=80%>
 </p>
-<br />
 <p align="center">
-  <img src="https://i.imgur.com/vIfIpxb.png" width=32%>
-  <img src="https://i.imgur.com/aLQwZG6.png" width=32%>
-  <img src="https://i.imgur.com/nPjV0gd.png" width=32%>
+  <img src="https://i.imgur.com/vIfIpxb.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/aLQwZG6.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/nPjV0gd.png" width=80%>
 </p>
 <p align="left">
 <b>The configuration of RAS/NAT allow a server to function as a software-based router and gateway for data traffic that flows through the network. Remote Access Service, enables remote clients to securely connect to the coporate environment, while allowing multiple private devices with their own private IP address to share a single public IP address for internet access through Network Address Translation.</b>
@@ -106,24 +119,65 @@ A personal project, that throughly goes over the setup of establishing a virtual
   
 <h2 align="center">Installing and Setting up Dynamic Host Configuration Protocol (DHCP)</h2>
 <p align="center">
-  <img src="https://i.imgur.com/1Bt1zRS.png" width=32%>
-  <img src="https://i.imgur.com/byz8l8U.png" width=32%>
-  <img src="https://i.imgur.com/1dulMv9.png" width=32%>
+  <img src="https://i.imgur.com/1Bt1zRS.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/byz8l8U.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/1dulMv9.png" width=80%>
 </p>
 <br />
 <p align="center">
-  <img src="https://i.imgur.com/sM53I3m.png" width=32%>
-  <img src="https://i.imgur.com/m3djXoa.png" width=32%>
-  <img src="https://i.imgur.com/bJCndzj.png" width=32%>
+  <img src="https://i.imgur.com/sM53I3m.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/m3djXoa.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/bJCndzj.png" width=80%>
 </p>
 <br /> 
 <p align="center">
-  <img src="https://i.imgur.com/2zGAiE6.png" width=32%>
-  <img src="https://i.imgur.com/QNLTryu.png" width=32%>
+  <img src="https://i.imgur.com/2zGAiE6.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/QNLTryu.png" width=80%>
 </p>
 <p align="left">
 <b>The screenshots above show the configuration and installation of DHCP server role on the DC server. DHCP allows the automatic assignment of IP address to the network, as they join it without the need to manually configure it for each device. The DHCP scope for this lab is set to 172.16.0.100-172.16.0.200, giving about 101 usable dynamic IP addresses for the network clients. The default gateway and DNS will be set to 172.16.0.1, which is the IP address of the INTERNAL NIC of the DC server. This is done because all data traffic and queries will be handled by the DC. If all configurations are set properly, the link status of the IPv4 address should be a green arrow pointing up, which indicates that everything is working properly</b>
-
+<br />
+<h2 align="center">Initializing PowerScript to Add Multiple Users onto the Network</h2>
+<p align="center">
+  <img src="https://i.imgur.com/FoASd5V.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/z2Xsb8Z.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/t9W2dLi.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/hkWdA2E.png" width=80%>
+</p>
+<p align="left">
+<b>The screenshots above showcase a script running through PowerScript to add over 1,000 dummy accounts onto the network. This was done to simulate realism to what the coporate environment would be like, and how a Domain Controller handles account creation through AD DS.</b>
+<br />
+<h2 align="center">Creating Windows 10 VM in Oracle VirtualBox with Internal NIC</h2>
+<p align="center">
+  <img src="https://i.imgur.com/S1uz3ni.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/kjZGNaD.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/z6KOfcH.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/e3UYfNM.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/fytFJP4.png" width=80%>
+</p>
+<p align="left">
+<b>The screenshots above show the creation of a Windows 10 VM that has its own internal NIC, and is able to have its own data traffic flow into the DC server. The PC was renamed to CLIENT1 and was made a member of the mydomain.com group. The CLIENT1 PC was able to obtain an IPv4 address from the DHCP server and is able to communicate to the DC server through pings, which establishes a good connection. And with this CLIENT1 device being apart of the mydomain.com domain, any of the 1,000 users on that domain are able to log onto this specific device</b>
+<br />
+<h2 align="center">Using Active Directory Users and Computers Accounts to Access CLIENT1 PC</h2>
+<p align="center">
+  <img src="https://i.imgur.com/7qk5PYb.png" width=80%>
+  <br />
+  <img src="https://i.imgur.com/dphOvf6.png" width=80%>
+</p>
+<p align="left">
+<b>The screenshots above display users from the mydomain.com domain being able to log into the CLIENT1 PC. Using the terminal, and typing "whoami", will generate a text response from the device along the lines of "mydomain\[username]. This indicates that the account is successfully linked to the domain. </b>
 
 
 
